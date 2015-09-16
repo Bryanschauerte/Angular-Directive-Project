@@ -12,7 +12,9 @@ var app = angular.module('directivePractice').directive('dirDisplay', function()
        element.on('click',function(){
 //it doesnt know to update the dom due to this
          scope.show = !scope.show;
-         scope.setUser({user: scope.user})
+         scope.setUser({user: scope.user});
+
+
          //apply updates the dom
          scope.$apply();
        })

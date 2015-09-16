@@ -13,6 +13,8 @@ var app = angular.module('directivePractice').directive('dirWeather',function(){
       $scope.weather = $scope.weatherCall({data: $scope.currentUser.city}).then(function(response){
         $scope.weather.temp =response[0];
         $scope.weather.type = response[1];
+        
+        // $scope.currentUser
         })
       });
       }

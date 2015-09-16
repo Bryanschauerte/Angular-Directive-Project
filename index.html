@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Directives</title>
+
+  <link rel ='stylesheet'  type = 'text/css' href = 'styles.css'></script>
 </head>
 <body ng-controller = 'mainCtrl'>
 
 <dir-weather current-user = 'currentUser' weather-call ='getWeather(data)'></dir-weather>
 <dir-Display ng-repeat = 'user in users' set-user = 'setUser(user)' user = 'user'></dir-Display>
-  {{hey}}
+
 
 
 
