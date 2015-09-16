@@ -4,9 +4,25 @@
   <meta charset="UTF-8">
   <title>Directives</title>
 </head>
-<body>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.js"></script>
+<body ng-controller = 'mainCtrl'>
+
+<dir-weather current-user = 'currentUser' weather-call ='getWeather(data)'></dir-weather>
+<dir-Display ng-repeat = 'user in users' set-user = 'setUser(user)' user = 'user'></dir-Display>
+  {{hey}}
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js"></script>
   <script src="app/app.js"></script>
+
+  <script type= 'text/javascript' src="js/mainCtrl.js"></script>
+
+  <script type= 'text/javascript' src="js/dirDisplay.js"></script>
+  <script type= 'text/html' src= "templates/dirDisplay.html"></script>
+  <script type= 'text/javascript' src= "js/weatherService.js"></script>
+
+  <script type= 'text/javascript' src="js/dirWeather.js"></script>
+  <script type= 'text/html' src= "templates/dirWeather.html"></script>
 </body>
 </html>
